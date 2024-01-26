@@ -2,7 +2,7 @@ var searchBox = document.querySelector(".search");
 var daysOfTheWeek = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
 checkWeather()
 async function checkWeather(city){
-    var apiUrl = `http://api.weatherapi.com/v1/forecast.json?key=92778f84cdff425185163520241801&q=${city || 'cairo'}&days=3`;
+    var apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=92778f84cdff425185163520241801&q=${city || 'cairo'}&days=3`;
     var response = await fetch(apiUrl);
     var data = await response.json();
  
